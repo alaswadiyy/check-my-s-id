@@ -7,24 +7,70 @@
 }
 
 .head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #89B622;
+  padding-inline: 1.5rem;
+  min-height: 2.75rem;
+  font-family: helvetica;
+  display: flex;
+  align-items: stretch;
+  user-select: none;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  gap: 1.5em;
+  background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 45%,#72aa00 100%);
 }
 
-ul {
+.head .logo {
+  align-self: center;
+}
+
+ul li {
     list-style: none;
+    text-decoration: none;
 }
 
-.menus {
+.head .left {
     display: flex;
-    gap: 2;
+    gap: 1.5rem;
 }
 
-.links {
-    display: flex;
-    
+.head_1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.search {
+  display: flex;
+  align-self: center;
+}
+
+.search_input {
+  all: unset;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+}
+
+.search_input::placeholder {
+  color: #9ca3af;
+}
+.search_btn {
+  transition: all 0.2s ease-in-out;
+  background-color: #008cba;
+  color: #fff;
+  border: none;
+  padding-inline: 1.5em;
+  cursor: pointer;
+}
+.search_btn:is(:hover) {
+  background-color: #006687;
+}
+
+.head .links {
+  color: white;
+  position: relative;
+  display: flex;
+  place-items: left;
+  align-self: center;
+  cursor: pointer;
 }
 
 .drop-list {
@@ -45,23 +91,22 @@ ul {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: linear-gradient(to bottom, #bfd255 0%,#8eb92a 45%,#72aa00 100%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    text-decoration: none;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 45%,#72aa00 100%);
+
   }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
