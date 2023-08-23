@@ -16,9 +16,9 @@ a {
   min-height: 2.75rem;
   font-family: helvetica;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   user-select: none;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   justify-content: space-between;
   gap: 1.5em;
   background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 45%,#72aa00 100%);
@@ -42,6 +42,7 @@ ul li {
   display: flex;
   gap: 1rem;
 }
+
 
 .search {
   display: flex;
@@ -81,7 +82,7 @@ ul li {
 .drop-list {
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 0.85rem;
     border: none;
     cursor: pointer;
   }
@@ -122,6 +123,10 @@ ul li {
     background-color: #3e8e41;
   }
 
+  .near{
+    padding-right: 1rem;
+  }
+
 body main {
   width: 70%;
   margin: 0 auto;
@@ -159,19 +164,33 @@ body main .hero form input[type=button] {
   padding: 1.2rem 2.2rem;
   margin: 0 0 0 2rem;
   align-self: baseline;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
-body main .hero .hero_extras {
+body main .hero form input[type=button]:is(:hover) {
+  background-color: #006687;
+}
+body main .hero .hero_plus {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
   padding: 0.5rem 2rem 1rem 0.5rem;
 }
-body main .hero .hero_extras input[type=button] {
+body main .hero .hero_plus input[type=button] {
   background-color: #008cba;
   padding: 1.2rem 2.4rem;
   margin: 0 0 0 2rem;
   align-self: baseline;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+body main .hero .hero_plus input[type=button]:is(:hover) {
+  background-color: #006687;
 }
 body main .ads-cont {
   display: flex;

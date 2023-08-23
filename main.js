@@ -20,7 +20,7 @@ return output;
 }
 
 
-const elements = document.querySelectorAll(".set2");
+const elements = document.querySelectorAll(".random");
 elements.forEach( item =>{
     item.textContent = outputRandom();
 })
