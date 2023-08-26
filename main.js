@@ -7,14 +7,14 @@ function generateRandom(){
 console.log(generateRandom());
 
 function outputRandom(){
-let output = '';
-for(i= 0; i < 3; i++){
-    output+=`${randoms[generateRandom()]}`;
-}
-output+= ' ';
-for(i =0; i < 3; i++){
-    output +=`${randoms[generateRandom()]}`
-}
+    let output = '';
+    for(i= 0; i < 3; i++){
+        output+=`${randoms[generateRandom()]}`;
+    }
+    output+= ' ';
+    for(i =0; i < 3; i++){
+        output +=`${randoms[generateRandom()]}`
+    }
 
 return output;
 }
